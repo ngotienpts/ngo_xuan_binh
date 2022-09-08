@@ -1,0 +1,73 @@
+// ipad pro >= 1024px va  <=1200px
+@media (min-width: 64em) and (max-width: 75em) {
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-none {
+    display: none;
+  }
+  .d-lg-flex {
+    display: flex;
+  }
+
+}
+
+
+
+
+
+// tablet and mobile <= 1023px
+@media (max-width: 63.9375em) {
+    .d-md-block {
+        display: block;
+    }
+    .d-md-none {
+        display: none;
+    }
+    .d-md-flex {
+        display: flex;
+    }
+  
+}
+
+
+
+
+
+
+
+// tablet >= 740px va <=1023px
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+
+}
+
+
+
+// mobile < 740px
+@media (max-width: 46.1875em) {
+    .d-block {
+        display: block;
+    }
+    .d-none {
+        display: none;
+    }
+    .d-flex {
+        display: flex;
+    }
+ 
+}
+
+// danh cho man hinh duoi 400px
+@media (max-width: 25em) {
+}
+@media (max-width: 20em) {
+}
