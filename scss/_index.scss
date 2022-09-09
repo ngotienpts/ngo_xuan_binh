@@ -100,6 +100,9 @@
     min-width: 228px;
     background-color: currentColor;
     border: 1px solid currentColor;
+    display: block;
+    position: relative;
+    z-index: 12;
 }
 .btn .btn-link {
     display: flex;
@@ -114,10 +117,16 @@
 }
 .btn-primary {
     color: #B12723;
-    
+}
+.btn-secondary {
+    background-color: transparent;
+    color: #B12723;
 }
 .btn-primary .btn-link {
     color: #F9F0E3;
+}
+.btn-secondary .btn-link {
+    color: #B12723;
 }
 .btn-img {
     margin-left: 0.8rem;
@@ -138,11 +147,19 @@
 .section-block {
     margin-top: 3.75rem;
 }
+.section__content {
+    background-color: #E9D6CE;
+    position: relative;
+}
+.section__content.p-64 {
+    padding: 4rem;
+}
 .section__title{
     margin-bottom: 1.8775rem;
 }
 .section-media {
     display: flex;
+    background-color: #000;
 }
 .media-video {
     flex: 0 0 65%;
@@ -234,4 +251,108 @@
     bottom: 0;
     left: 0;
     margin: 0;
+}
+
+.article-karma,
+.article-item {
+    background-color: #fff;
+}
+.article-karma__content,
+.article-item__content {
+    padding: 1.5rem;
+}
+.article-karma-item {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem 1.875rem;
+}
+.article-karma:first-child{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.footer-karma {
+    margin-top: 3rem;
+    position: relative;
+}
+/*=============================================================================================== custom swiper*/
+.swiper-button-prev, 
+.swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 125px;
+    bottom: 0;
+    top: auto;
+}
+.swiper-button-next, 
+.swiper-rtl .swiper-button-prev {
+    right: 64px;
+    top: auto;
+    bottom: 0;
+}
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction {
+    bottom: 14px;
+    left: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    background: #fff;
+}
+.swiper-pagination-bullet-active {
+    background: #DDBEB0;
+}
+
+.swiper-button-next:after, 
+.swiper-rtl .swiper-button-prev:after {
+    content: url('../images/arrow-next.png');
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: url('../images/arrow-prev.png');
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    background: #9D5E41;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-size: inherit;
+}
+/*=============================================================================================== thanh tựu*/
+.achievement-block {
+    margin-top: 3.75rem;
+}
+.achievement-container {
+    display: flex;
+    background-color: #333;
+}
+.achievement__img {
+    flex: 0 0 65%;
+}
+.achievement__content {
+    flex: 1 1;
+    padding: 3rem;
+}
+.achievement__title,
+.achievement__desc {
+    margin-bottom: 2.5rem;
+}
+.achievement__desc p {
+    margin-bottom: 1rem;
+}
+.btn-third {
+    color: #9D5E41;
+    background: transparent;
+}
+.btn-third .btn-link {
+    color: #9D5E41;
 }

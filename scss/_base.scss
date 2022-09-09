@@ -211,6 +211,9 @@ li {
 .text-gray-d4c {
   color:#D4CDC7
 }
+.text-gray-6b {
+  color:#6B6B6B;
+}
 .text-gray-19 {
   color:#191919
 }
@@ -446,6 +449,54 @@ li {
 }
 
 /*=================================================================*/
+.pt-16 {
+  padding-top: 1rem;
+}
+.pb-16 {
+  padding-bottom: 1rem;
+}
+.pl-16 {
+  padding-left: 1rem;
+}
+.pr-16 {
+  padding-right: 1rem;
+}
+.py-16 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-16 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.p-16 {
+  padding: 1rem;
+}
+.mt-16 {
+  margin-top: 1rem;
+}
+.mb-16 {
+  margin-bottom: 1rem;
+}
+.ml-16 {
+  margin-left: 1rem;
+}
+.mr-16 {
+  margin-right: 1rem;
+}
+.my-16 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mx-16 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.m-16 {
+  margin: 1rem;
+}
+
+/*=================================================================*/
 
 .pt-20 {
   padding-top: 1.25rem;
@@ -631,6 +682,9 @@ li {
 }
 .lh-34 {
   line-height: 2.125rem;
+}
+.lh-36 {
+  line-height: 2.25rem;
 }
 .lh-42 {
   line-height: 2.625rem;
