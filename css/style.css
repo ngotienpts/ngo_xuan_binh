@@ -1137,7 +1137,7 @@ li {
 }
 
 .section__title {
-  margin-bottom: 1.8775rem;
+  margin-bottom: 1.875rem;
 }
 
 .section-media {
@@ -1279,14 +1279,14 @@ li {
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: auto;
-  right: 125px;
+  right: 64px;
   bottom: 0;
   top: auto;
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 64px;
+  right: 0;
   top: auto;
   bottom: 0;
 }
@@ -1370,6 +1370,109 @@ li {
 
 .btn-third .btn-link {
   color: #9D5E41;
+}
+
+/*=============================================================================================== sub menu*/
+.header-navbar-mb__logo {
+  text-align: center;
+}
+
+.menu-bar-icon {
+  width: 2.5rem;
+  height: 2.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.menu-bar-icon::before {
+  position: absolute;
+  content: url("../images/wave3.png");
+}
+
+.bar {
+  position: relative;
+  width: 1.25rem;
+  height: 2px;
+  background-color: #333;
+}
+
+.bar::before,
+.bar::after {
+  position: absolute;
+  content: "";
+  background-color: #333;
+  width: 1.5rem;
+  height: 2px;
+}
+
+.bar::before {
+  transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+
+.bar::after {
+  transform: translateY(8px);
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  -ms-transform: translateY(8px);
+  -o-transform: translateY(8px);
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+
+.menu-bar-icon.open .bar {
+  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  background-color: transparent;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+}
+
+.menu-bar-icon.open .bar::before {
+  transform: rotate(45deg) translate(14px, -14px);
+  -webkit-transform: rotate(45deg) translate(14px, -14px);
+  -moz-transform: rotate(45deg) translate(14px, -14px);
+  -ms-transform: rotate(45deg) translate(14px, -14px);
+  -o-transform: rotate(45deg) translate(14px, -14px);
+}
+
+.menu-bar-icon.open .bar:after {
+  transform: rotate(-45deg) translate(14px, 14px);
+  -webkit-transform: rotate(-45deg) translate(14px, 14px);
+  -moz-transform: rotate(-45deg) translate(14px, 14px);
+  -ms-transform: rotate(-45deg) translate(14px, 14px);
+  -o-transform: rotate(-45deg) translate(14px, 14px);
 }
 
 #back-top {

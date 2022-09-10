@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 75.0625em) and (max-width: 87.5em) {
   .header-navbar {
     width: 100%;
@@ -21,6 +22,10 @@
   .navbar-item + .navbar-item {
     margin-left: 2.5rem;
   }
+
+  .media-sidebar__desc {
+    padding-bottom: 3rem;
+  }
 }
 @media (min-width: 64em) and (max-width: 75em) {
   .d-lg-block {
@@ -35,6 +40,7 @@
     display: flex;
   }
 
+  /*============================================================================ default*/
   .header-navbar {
     width: 100%;
   }
@@ -64,6 +70,28 @@
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+
+  .section-media {
+    display: block;
+  }
+
+  .video-thumb__title {
+    font-size: 1.25rem;
+  }
+
+  .article-karma__content,
+.article-item__content {
+    padding: 1rem;
+  }
+
+  .article-karma:first-child .article-karma__title {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  .achievement__content {
+    padding: 2rem;
+  }
 }
 @media (max-width: 63.9375em) {
   .d-md-block {
@@ -76,6 +104,115 @@
 
   .d-md-flex {
     display: flex;
+  }
+
+  /*============================================================================ default*/
+  .header-navbar-pc {
+    display: none;
+  }
+
+  /*============================================================================ menu mb*/
+  .header-navbar-mb {
+    padding: 13px 0;
+    width: calc(100% - 30px);
+    margin: auto;
+    border-bottom: 2px solid #333;
+    position: relative;
+  }
+
+  /*============================================================================ intro*/
+  .main-intro-block {
+    padding: 2rem 0 5rem;
+    background-position: center;
+  }
+
+  .main-intro {
+    padding: 0;
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .main-intro-img {
+    order: 2;
+  }
+
+  .main-intro-content {
+    order: 3;
+    background-color: #ebe3dd;
+    width: calc(100% - 30px);
+    margin: auto;
+    padding: 0.9375rem;
+    margin-top: 1.875rem;
+  }
+
+  .main-intro__title {
+    text-align: center;
+    font-size: 3.75rem;
+  }
+
+  .main-intro__name {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .btn-primary {
+    margin: auto;
+  }
+
+  /*============================================================================ media*/
+  .section-block {
+    margin-top: 1.25rem;
+  }
+
+  .section-media {
+    display: block;
+  }
+
+  .media-sidebar__content {
+    padding-bottom: 2rem;
+  }
+
+  .media-video {
+    padding: 2rem 2rem;
+  }
+
+  /*============================================================================ nguoi & nghiep*/
+  .article-karma:first-child {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+
+  .article-karma:nth-child(2) {
+    grid-column: 1/3;
+    grid-gap: 2/3;
+  }
+
+  .article-karma:nth-child(3) {
+    grid-column: 3/5;
+    grid-gap: 2/3;
+  }
+
+  .article-karma:nth-child(4) {
+    grid-column: 1/3;
+    grid-gap: 3/4;
+  }
+
+  .article-karma:nth-child(5) {
+    grid-column: 3/5;
+    grid-gap: 3/4;
+  }
+
+  .article-karma-item {
+    grid-gap: 1.875rem;
+  }
+
+  .section__content.p-64 {
+    padding: 2rem;
+  }
+
+  /*============================================================================ thành tựu*/
+  .achievement-container {
+    flex-direction: column;
   }
 }
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
@@ -90,6 +227,11 @@
   .d-sm-flex {
     display: flex;
   }
+
+  /*============================================================================ default*/
+  .header-navbar-mb__logo {
+    font-size: 2.25rem;
+  }
 }
 @media (max-width: 46.1875em) {
   .d-block {
@@ -102,6 +244,137 @@
 
   .d-flex {
     display: flex;
+  }
+
+  /*============================================================================ default*/
+  /*============================================================================ intro*/
+  .main-intro-block {
+    padding: 1.5rem 0 3rem;
+  }
+
+  .main-intro__title {
+    font-size: 3rem;
+    line-height: 3rem;
+    max-width: 270px;
+    margin: auto;
+    margin-bottom: 2rem;
+    font-weight: 900;
+  }
+
+  .main-intro__name {
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+  }
+
+  /*============================================================================ media*/
+  .section__content .section-media-mb-container {
+    background-color: #000;
+    padding: 1.375rem 1rem 1rem;
+  }
+
+  .section__title {
+    margin-bottom: 1.25rem;
+  }
+
+  .section__title a {
+    font-size: 2.25rem;
+    line-height: 46px;
+  }
+
+  .video-thumb {
+    background-color: #333;
+  }
+
+  .video-thumb__text {
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .play-media--mb {
+    position: absolute;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .play-media--mb .play-media__icon--small {
+    width: 3rem;
+    height: 3rem;
+    background-color: #000;
+  }
+
+  .section-media-mb .swiper-button-next,
+.section-media-mb .swiper-rtl .swiper-button-prev {
+    top: 40%;
+  }
+
+  .section-media-mb .swiper-button-prev,
+.section-media-mb .swiper-rtl .swiper-button-next {
+    left: 0;
+    right: auto;
+    bottom: auto;
+    top: 40%;
+  }
+
+  /*============================================================================ người & nghiệp*/
+  .section-people-karma-mb {
+    padding: 0.9375rem;
+  }
+
+  .section__content {
+    background-color: #ebe3dd;
+  }
+
+  .article-karma__content {
+    padding: 0.625rem;
+  }
+
+  .karma-small {
+    display: flex;
+    padding: 0.9375rem 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .karma-small .article-karma__img {
+    flex: 0 0 35%;
+  }
+
+  .karma-small .article-karma__content {
+    flex: 1 1;
+    padding: 0 0.625rem;
+  }
+
+  /*============================================================================ thành tựu*/
+  .achievement-container {
+    padding: 0.75rem 0.9375rem 0.9375rem;
+  }
+
+  .achievement__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement__content {
+    padding: 1rem;
+  }
+
+  .btn-third {
+    margin: auto;
+  }
+
+  /*============================================================================ footer*/
+  .footer-block {
+    padding: 0.75rem;
+    text-align: center;
+    display: block;
+  }
+
+  .footer-item + .footer-item {
+    margin-top: 0.625rem;
   }
 }
 

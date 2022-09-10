@@ -28,7 +28,7 @@
     <!-- header -->
     <header id="header" class="">
         <div class="header">
-          <section class="header-navbar w-1920">
+          <section class="header-navbar-pc header-navbar w-1920">
             <div class="nav-heritage">
               <a href="#" class="nav-heritage__link">
                 <img src="./images/logo.png" alt="">
@@ -46,6 +46,14 @@
               <li class="navbar-item"><a href="#">Thơ ca</a></li>
             </ul>
           </section>
+          <section class="header-navbar-mb d-xl-none d-md-block">
+            <div class="menu-bar-icon">
+              <div class="bar"></div>
+            </div>
+            <h3 class="header-navbar-mb__logo fs-24 font-primary fw-900 text-uppercase">
+              <a href="#" class="text-red-b12">Ngô Xuân Bính</a>
+            </h3>
+          </section>
         </div>
     </header>
     <!-- end header -->
@@ -55,9 +63,14 @@
       <!-- intro -->
       <section class="main-intro-block">
         <div class="main-intro  w-1792">
+          <!-- title mb -->
+          <div class="d-md-block d-xl-none">
+            <h1 class="main-intro__title text-gray-d4c font-primary text-uppercase">Ngô xuân bính</h1>
+          </div>
+          <!-- end title mb -->
           <!-- content -->
           <div class="main-intro-content flex-1">
-            <h1 class="main-intro__title text-gray-d4c font-primary text-uppercase">Ngô xuân bính</h1>
+            <h1 class="main-intro__title text-gray-d4c font-primary text-uppercase d-xl-block d-md-none">Ngô xuân bính</h1>
             <h2 class="main-intro__name text-uppercase">Ngô xuân bính</h2>
             <p class="main-intro__desc font-secondary text-gray-66 lh-26 mb-24">
               Ngô Xuân Bính là giáo sư, viện sĩ người Việt tại Nga. Ông nổi danh trong rất nhiều lĩnh vực như là võ sư sáng lập môn phái võ Nhất Nam, một môn võ dân tộc phát triển mạnh ở châu Âu . Ông còn là một thầy thuốc giỏi trong việc sử dụng y học dân tộc để chữa bệnh.
@@ -92,103 +105,212 @@
           <h2 class="section__title text-center"><a href="#" class="text-red-b12 fw-700 fs-48 lh-62">Media</a></h2>
           <!-- end title -->
 
-          <!-- content -->
-          <div class="section__content section-media">
-            <!-- video -->
-            <div class="media-video">
-              <div class="">
-                <div class="thumb-img">
-                    <a href="#" class="thumb-item thumb-5x3">
-                      <img class="" src="./images/2.jpg" alt="">
-                    </a>
-                </div>
-              </div>
-            </div>
-            <!-- end video -->
-
-            <!-- sidebar -->
-            <div class="media-sidebar">
-              <!-- content -->
-              <div class="media-sidebar__content">
-                <p class="media-sidebar__category font-secondary text-orange-9d5 fw-700 lh-20">Video</p>
-                <h3 class="media-sidebar__title text-white fs-40 lh-52">Ngô Xuân Bính: "Kỳ nhân" xứ nghệ ở nước Nga</h3>
-                <div class="play-media">
-                  <div class="play-media__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19" viewBox="0 0 15 19" fill="none">
-                      <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"/>
-                      </svg>
+          <!-- media pc -->
+          <div class="d-xl-block d-none">
+            <!-- content -->
+            <div class="section__content section-media">
+              <!-- video -->
+              <div class="media-video">
+                <div class="">
+                  <div class="thumb-img">
+                      <a href="#" class="thumb-item thumb-5x3">
+                        <img class="" src="./images/2.jpg" alt="">
+                      </a>
                   </div>
-                  <span class="play-media__time">2:30</span>
                 </div>
-                <p class="media-sidebar__desc font-secondary text-white lh-26">Ngô Xuân Bính được biết đến với những công trình đồ sộ về y học và võ thuật. Nhiều người gọi ông là “kỳ nhân" bởi tinh thông hội họa, thơ ca, y học, võ thuật và âm nhạc. Thế nhưng, gặp ông chỉ thấy một người xứ Nghệ giản dị và khiêm nhường.</p>
               </div>
-              <!-- end content -->
-              <!-- list-video-thumb -->
-              <div class="list-video-thumb">
-                <!-- thumb -->
-                <div class="video-thumb">
-                  <!-- img  -->
-                  <div class="video-thumb__img">
-                    <div class="">
-                      <div class="thumb-img">
-                          <a href="#" class="thumb-item thumb-5x3">
-                            <img class="" src="./images/2.jpg" alt="">
-                          </a>
-                          <div class="overlay-100"></div>
-                          <p class="playing text-white fs-14 lh-22 font-secondary">Đang phát</p>
-                          <div class="play-media play-media--small">
-                            <div class="play-media__icon play-media__icon--small">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 15 19" fill="none">
-                                <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"/>
-                                </svg>
+              <!-- end video -->
+  
+              <!-- sidebar -->
+              <div class="media-sidebar">
+                <!-- content -->
+                <div class="media-sidebar__content">
+                  <p class="media-sidebar__category font-secondary text-orange-9d5 fw-700 lh-20">Video</p>
+                  <h3 class="media-sidebar__title text-white fs-40 lh-52">Ngô Xuân Bính: "Kỳ nhân" xứ nghệ ở nước Nga</h3>
+                  <div class="play-media">
+                    <div class="play-media__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19" viewBox="0 0 15 19" fill="none">
+                        <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"/>
+                        </svg>
+                    </div>
+                    <span class="play-media__time">2:30</span>
+                  </div>
+                  <p class="media-sidebar__desc font-secondary text-white lh-26">Ngô Xuân Bính được biết đến với những công trình đồ sộ về y học và võ thuật. Nhiều người gọi ông là “kỳ nhân" bởi tinh thông hội họa, thơ ca, y học, võ thuật và âm nhạc. Thế nhưng, gặp ông chỉ thấy một người xứ Nghệ giản dị và khiêm nhường.</p>
+                </div>
+                <!-- end content -->
+                <!-- list-video-thumb -->
+                <div class="list-video-thumb">
+                  <!-- thumb -->
+                  <div class="video-thumb">
+                    <!-- img  -->
+                    <div class="video-thumb__img">
+                      <div class="">
+                        <div class="thumb-img">
+                            <a href="#" class="thumb-item thumb-5x3">
+                              <img class="" src="./images/2.jpg" alt="">
+                            </a>
+                            <div class="overlay-100"></div>
+                            <p class="playing text-white fs-14 lh-22 font-secondary">Đang phát</p>
+                            <div class="play-media play-media--small">
+                              <div class="play-media__icon play-media__icon--small">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 15 19" fill="none">
+                                  <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"/>
+                                  </svg>
+                              </div>
+                              <span class="play-media__time play-media__time--small">2:30</span>
                             </div>
-                            <span class="play-media__time play-media__time--small">2:30</span>
-                          </div>
+                        </div>
                       </div>
                     </div>
+                    <!-- end img  -->
+                    <!-- text -->
+                    <div class="video-thumb__text">
+                      <h3 class="video-thumb__title"><a href="#" class=" text-white lh-20">Ngô Xuân Bính: “Kỳ nhân” xứ Nghệ ở nước Nga</a></h3>
+                    </div>
+                    <!-- end text -->
                   </div>
-                  <!-- end img  -->
-                  <!-- text -->
-                  <div class="video-thumb__text">
-                    <h3 class="video-thumb__title"><a href="#" class=" text-white lh-20">Ngô Xuân Bính: “Kỳ nhân” xứ Nghệ ở nước Nga</a></h3>
-                  </div>
-                  <!-- end text -->
-                </div>
-                <!-- end thumb -->
-                <!-- thumb -->
-                <div class="video-thumb">
-                  <!-- img  -->
-                  <div class="video-thumb__img">
-                    <div class="">
-                      <div class="thumb-img">
-                          <a href="#" class="thumb-item thumb-5x3">
-                            <img class="" src="./images/2.jpg" alt="">
-                          </a>
-                          <div class="play-media play-media--small">
-                            <div class="play-media__icon play-media__icon--small">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 15 19" fill="none">
-                                <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"/>
-                                </svg>
+                  <!-- end thumb -->
+                  <!-- thumb -->
+                  <div class="video-thumb">
+                    <!-- img  -->
+                    <div class="video-thumb__img">
+                      <div class="">
+                        <div class="thumb-img">
+                            <a href="#" class="thumb-item thumb-5x3">
+                              <img class="" src="./images/2.jpg" alt="">
+                            </a>
+                            <div class="play-media play-media--small">
+                              <div class="play-media__icon play-media__icon--small">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 15 19" fill="none">
+                                  <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"/>
+                                  </svg>
+                              </div>
+                              <span class="play-media__time play-media__time--small">2:30</span>
                             </div>
-                            <span class="play-media__time play-media__time--small">2:30</span>
-                          </div>
+                        </div>
                       </div>
                     </div>
+                    <!-- end img  -->
+                    <!-- text -->
+                    <div class="video-thumb__text">
+                      <h3 class="video-thumb__title"><a href="#" class=" text-white lh-20">Ngô Xuân Bính: “Kỳ nhân” xứ Nghệ ở nước Nga</a></h3>
+                    </div>
+                    <!-- end text -->
                   </div>
-                  <!-- end img  -->
-                  <!-- text -->
-                  <div class="video-thumb__text">
-                    <h3 class="video-thumb__title"><a href="#" class=" text-white lh-20">Ngô Xuân Bính: “Kỳ nhân” xứ Nghệ ở nước Nga</a></h3>
-                  </div>
-                  <!-- end text -->
+                  <!-- end thumb -->
                 </div>
-                <!-- end thumb -->
+                <!-- end list-video-thumb -->
               </div>
-              <!-- end list-video-thumb -->
+              <!-- end sidebar -->
             </div>
-            <!-- end sidebar -->
+            <!-- end content -->
           </div>
-          <!-- end content -->
+          <!-- end media pc -->
+          <!-- media mobile -->
+          <div class="d-xl-none d-block">
+            <div class="section__content section-media section-media-mb">
+              <div class="section-media-mb-container">
+                <div class="swiper mySwiperMediaMb">
+                  <div class="swiper-wrapper">
+                    <!-- item -->
+                    <div class="swiper-slide video-thumb">
+                      <!-- img  -->
+                      <div class="video-thumb__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                              <div class="play-media play-media--small play-media--mb">
+                                <div class="play-media__icon play-media__icon--small">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 15 19" fill="none">
+                                    <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"></path>
+                                    </svg>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end img  -->
+                      <!-- text -->
+                      <div class="video-thumb__text">
+                        <h3 class="video-thumb__title fs-18 mb-16 fw-600"><a href="#" class=" text-white lh-24">Ngô Xuân Bính: “Kỳ nhân” xứ Nghệ ở nước Nga</a></h3>
+                        <p class="media-sidebar__desc font-secondary text-white lh-20 fs-14 mb-16">Ngô Xuân Bính được biết đến với những công trình đồ sộ về y học và võ thuật. Nhiều người gọi ông là “kỳ nhân" bởi tinh thông hội họa, thơ ca, y học, võ thuật và âm nhạc. Thế nhưng, gặp ông chỉ thấy một người xứ Nghệ giản dị và khiêm nhường.</p>
+                        <p class="media-sidebar__category font-secondary text-orange-9d5 fw-700 lh-20">Video</p>
+                      </div>
+                      <!-- end text -->
+                    </div>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide video-thumb">
+                      <!-- img  -->
+                      <div class="video-thumb__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                              <div class="play-media play-media--small play-media--mb">
+                                <div class="play-media__icon play-media__icon--small">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 15 19" fill="none">
+                                    <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"></path>
+                                    </svg>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end img  -->
+                      <!-- text -->
+                      <div class="video-thumb__text">
+                        <h3 class="video-thumb__title fs-18 mb-16 fw-600"><a href="#" class=" text-white lh-24">Ngô Xuân Bính: “Kỳ nhân” xứ Nghệ ở nước Nga</a></h3>
+                        <p class="media-sidebar__desc font-secondary text-white lh-20 fs-14 mb-16">Ngô Xuân Bính được biết đến với những công trình đồ sộ về y học và võ thuật. Nhiều người gọi ông là “kỳ nhân" bởi tinh thông hội họa, thơ ca, y học, võ thuật và âm nhạc. Thế nhưng, gặp ông chỉ thấy một người xứ Nghệ giản dị và khiêm nhường.</p>
+                        <p class="media-sidebar__category font-secondary text-orange-9d5 fw-700 lh-20">Video</p>
+                      </div>
+                      <!-- end text -->
+                    </div>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide video-thumb">
+                      <!-- img  -->
+                      <div class="video-thumb__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                              <div class="play-media play-media--small play-media--mb">
+                                <div class="play-media__icon play-media__icon--small">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 15 19" fill="none">
+                                    <path d="M14.2409 9.12745L1.14416 0.0796124C1.00552 -0.0158423 0.825777 -0.0257949 0.677648 0.0515641C0.529067 0.129828 0.436035 0.283641 0.436035 0.451931V18.5476C0.436035 18.7159 0.529067 18.8702 0.677648 18.9484C0.743583 18.9828 0.815842 19 0.887648 19C0.977519 19 1.06694 18.9729 1.14416 18.9199L14.2409 9.87209C14.3633 9.78749 14.436 9.64861 14.436 9.49977C14.436 9.35093 14.3629 9.21205 14.2409 9.12745ZM1.33926 17.6863V1.31374L13.1891 9.50022L1.33926 17.6863Z" fill="#9D5E41"></path>
+                                    </svg>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end img  -->
+                      <!-- text -->
+                      <div class="video-thumb__text">
+                        <h3 class="video-thumb__title fs-18 mb-16 fw-600"><a href="#" class=" text-white lh-24">Ngô Xuân Bính: “Kỳ nhân” xứ Nghệ ở nước Nga</a></h3>
+                        <p class="media-sidebar__desc font-secondary text-white lh-20 fs-14 mb-16">Ngô Xuân Bính được biết đến với những công trình đồ sộ về y học và võ thuật. Nhiều người gọi ông là “kỳ nhân" bởi tinh thông hội họa, thơ ca, y học, võ thuật và âm nhạc. Thế nhưng, gặp ông chỉ thấy một người xứ Nghệ giản dị và khiêm nhường.</p>
+                        <p class="media-sidebar__category font-secondary text-orange-9d5 fw-700 lh-20">Video</p>
+                      </div>
+                      <!-- end text -->
+                    </div>
+                    <!-- end item -->
+                  </div>
+                </div>
+              </div>
+              <div class="navigation-container">
+                <!-- next prev -->
+                <div class="swiper-button-next swiper-button-next7"></div>
+                <div class="swiper-button-prev swiper-button-prev7"></div>
+                <!-- end next prev -->
+              </div>
+            </div>
+          </div>
+          <!-- end media mobile -->
         </div>
       </section>
       <!-- end section-block media-->
@@ -200,258 +322,374 @@
           <h2 class="section__title text-center"><a href="#" class="text-red-b12 fw-700 fs-48 lh-62">Người & Nghiệp</a></h2>
           <!-- end title -->
 
-          <!-- content -->
-          <div class="section__content section-people-karma p-64">
-            <!-- container -->
-            <div class="article-karma-container">
-              <div class="swiper mySwiperKarma">
-                <div class="swiper-wrapper">
-                  <!-- item -->
-                  <div class="swiper-slide article-karma-item">
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+          <!-- người & nghiệp pc -->
+          <div class="d-xl-block d-none">
+            <!-- content -->
+            <div class="section__content section-people-karma p-64">
+              <!-- container -->
+              <div class="article-karma-container">
+                <div class="swiper mySwiperKarma">
+                  <div class="swiper-wrapper">
+                    <!-- item -->
+                    <div class="swiper-slide article-karma-item">
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-40 lh-56 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <p class="article-karma__desc font-secondary lh-26 text-gray-6b mb-16">
+                            Ở triển lãm Nghệ thuật đương đại “NIỆM” của họa sĩ Ngô Xuân Bính, Lê Văn Thìn, Đặng Tin Tưởng và nghệ nhân Đào Trọng Cường tại Bảo tàng Hà Nội vào ngày 30 tháng 5 tới đây, nghệ thuật sáng tạo đã được đẩy lên cao trào, nét chung ở các tác phẩm là sự hướng thiện thể hiện trong những nét vẽ miên man.
+                          </p>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-40 lh-56 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <p class="article-karma__desc font-secondary lh-26 text-gray-6b mb-16">
-                          Ở triển lãm Nghệ thuật đương đại “NIỆM” của họa sĩ Ngô Xuân Bính, Lê Văn Thìn, Đặng Tin Tưởng và nghệ nhân Đào Trọng Cường tại Bảo tàng Hà Nội vào ngày 30 tháng 5 tới đây, nghệ thuật sáng tạo đã được đẩy lên cao trào, nét chung ở các tác phẩm là sự hướng thiện thể hiện trong những nét vẽ miên man.
-                        </p>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
+                      <!-- end article karma -->
                     </div>
-                    <!-- end article karma -->
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-karma-item">
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-40 lh-56 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <p class="article-karma__desc font-secondary lh-26 text-gray-6b mb-16">
+                            Ở triển lãm Nghệ thuật đương đại “NIỆM” của họa sĩ Ngô Xuân Bính, Lê Văn Thìn, Đặng Tin Tưởng và nghệ nhân Đào Trọng Cường tại Bảo tàng Hà Nội vào ngày 30 tháng 5 tới đây, nghệ thuật sáng tạo đã được đẩy lên cao trào, nét chung ở các tác phẩm là sự hướng thiện thể hiện trong những nét vẽ miên man.
+                          </p>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                    </div>
+                    <!-- end item -->
                   </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-karma-item">
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-40 lh-56 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <p class="article-karma__desc font-secondary lh-26 text-gray-6b mb-16">
-                          Ở triển lãm Nghệ thuật đương đại “NIỆM” của họa sĩ Ngô Xuân Bính, Lê Văn Thìn, Đặng Tin Tưởng và nghệ nhân Đào Trọng Cường tại Bảo tàng Hà Nội vào ngày 30 tháng 5 tới đây, nghệ thuật sáng tạo đã được đẩy lên cao trào, nét chung ở các tác phẩm là sự hướng thiện thể hiện trong những nét vẽ miên man.
-                        </p>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                  </div>
-                  <!-- end item -->
                 </div>
               </div>
+              <!-- end container -->
+              <!-- footer karma -->
+              <div class="footer-karma">
+                <!-- pagination -->
+              <div class="swiper-pagination swiper-pagination1"></div>
+              <!-- end pagination -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+              <!-- next prev -->
+              <div class="swiper-button-next swiper-button-next1"></div>
+              <div class="swiper-button-prev swiper-button-prev1"></div>
+              <!-- end next prev -->
+              </div>
+              <!-- end footer karma -->
             </div>
-            <!-- end container -->
-            <!-- footer karma -->
-            <div class="footer-karma">
-              <!-- pagination -->
-            <div class="swiper-pagination swiper-pagination1"></div>
-            <!-- end pagination -->
-            <button class="btn btn-read-more round-99 btn-secondary mx-auto">
-              <a href="#" class="btn-link">
-                Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
-              </a>
-            </button>
-            <!-- next prev -->
-            <div class="swiper-button-next swiper-button-next1"></div>
-            <div class="swiper-button-prev swiper-button-prev1"></div>
-            <!-- end next prev -->
-            </div>
-            <!-- end footer karma -->
+            <!-- end content -->
           </div>
-          <!-- end content -->
+          <!-- end người & nghiệp pc -->
+
+          <!-- người & nghiệp mobile -->
+          <div class="d-xl-none d-block">
+            <div class="section__content section-people-karma-mb">
+              <!-- large -->
+              <div class="karma-large bg-white">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fs-20 lh-26 fw-700"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end large -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto mt-16">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+            </div>
+          </div>
+          <!-- end người & nghiệp mobile -->
         </div>
       </section>
       <!-- end section-block nguoi & nghiep-->
@@ -463,140 +701,257 @@
           <h2 class="section__title text-center"><a href="#" class="text-red-b12 fw-700 fs-48 lh-62">Võ thuật</a></h2>
           <!-- end title -->
 
-          <!-- content -->
-          <div class="section__content section-kungfu p-64">
-            <!-- container -->
-            <div class="article-kungfu-container">
-              <div class="swiper mySwiperKungfu">
-                <div class="swiper-wrapper">
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-kungfu">
-                    <!-- img  -->
-                    <div class="article-item__img article-kungfu__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+          <!-- võ thuật pc -->
+          <div class="d-xl-block d-none">
+            <!-- content -->
+            <div class="section__content section-kungfu p-64">
+              <!-- container -->
+              <div class="article-kungfu-container">
+                <div class="swiper mySwiperKungfu">
+                  <div class="swiper-wrapper">
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-kungfu">
+                      <!-- img  -->
+                      <div class="article-item__img article-kungfu__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-kungfu__content">
+                        <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-kungfu__content">
-                      <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-kungfu">
-                    <!-- img  -->
-                    <div class="article-item__img article-kungfu__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-kungfu">
+                      <!-- img  -->
+                      <div class="article-item__img article-kungfu__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-kungfu__content">
+                        <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-kungfu__content">
-                      <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-kungfu">
-                    <!-- img  -->
-                    <div class="article-item__img article-kungfu__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-kungfu">
+                      <!-- img  -->
+                      <div class="article-item__img article-kungfu__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-kungfu__content">
+                        <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-kungfu__content">
-                      <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-kungfu">
-                    <!-- img  -->
-                    <div class="article-item__img article-kungfu__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-kungfu">
+                      <!-- img  -->
+                      <div class="article-item__img article-kungfu__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-kungfu__content">
+                        <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-kungfu__content">
-                      <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-kungfu">
-                    <!-- img  -->
-                    <div class="article-item__img article-kungfu__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-kungfu">
+                      <!-- img  -->
+                      <div class="article-item__img article-kungfu__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-kungfu__content">
+                        <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-kungfu__content">
-                      <h3 class="article-item__title article-kungfu__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-kungfu__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
+                    <!-- end item -->
+                    
                   </div>
-                  <!-- end item -->
-                  
                 </div>
               </div>
+              <!-- end container -->
+              <!-- footer karma -->
+              <div class="footer-karma">
+                <!-- pagination -->
+              <div class="swiper-pagination swiper-pagination2"></div>
+              <!-- end pagination -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+              <!-- next prev -->
+              <div class="swiper-button-next swiper-button-next2"></div>
+              <div class="swiper-button-prev swiper-button-prev2"></div>
+              <!-- end next prev -->
+              </div>
+              <!-- end footer karma -->
             </div>
-            <!-- end container -->
-            <!-- footer karma -->
-            <div class="footer-karma">
-              <!-- pagination -->
-            <div class="swiper-pagination swiper-pagination2"></div>
-            <!-- end pagination -->
-            <button class="btn btn-read-more round-99 btn-secondary mx-auto">
-              <a href="#" class="btn-link">
-                Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
-              </a>
-            </button>
-            <!-- next prev -->
-            <div class="swiper-button-next swiper-button-next2"></div>
-            <div class="swiper-button-prev swiper-button-prev2"></div>
-            <!-- end next prev -->
-            </div>
-            <!-- end footer karma -->
+            <!-- end content -->
           </div>
-          <!-- end content -->
+          <!-- end võ thuật pc -->
+
+          <!-- end võ thuật mobile-->
+          <div class="d-xl-none d-block">
+            <div class="section__content section-people-karma-mb">
+              <!-- large -->
+              <div class="karma-large bg-white">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fs-20 lh-26 fw-700"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end large -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto mt-16">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+            </div>
+          </div>
+          <!-- end võ thuật mobile-->
+
         </div>
       </section>
       <!-- end section-block võ thuat-->
@@ -608,119 +963,235 @@
           <h2 class="section__title text-center"><a href="#" class="text-red-b12 fw-700 fs-48 lh-62">Y học</a></h2>
           <!-- end title -->
 
-          <!-- content -->
-          <div class="section__content section-medical p-64">
-            <!-- container -->
-            <div class="article-medical-container">
-              <div class="swiper mySwiperMedical">
-                <div class="swiper-wrapper">
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-medical">
-                    <!-- img  -->
-                    <div class="article-item__img article-medical__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
-                        </div>
-                      </div>
+           <!-- y học pc -->
+           <div class="d-xl-block d-none">
+             <!-- content -->
+             <div class="section__content section-medical p-64">
+               <!-- container -->
+               <div class="article-medical-container">
+                 <div class="swiper mySwiperMedical">
+                   <div class="swiper-wrapper">
+                     <!-- item -->
+                     <div class="swiper-slide article-item article-medical">
+                       <!-- img  -->
+                       <div class="article-item__img article-medical__img">
+                         <div class="">
+                           <div class="thumb-img">
+                               <a href="#" class="thumb-item thumb-5x3">
+                                 <img class="" src="./images/2.jpg" alt="">
+                               </a>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end img  -->
+                       <!-- content -->
+                       <div class="article-item__content article-medical__content">
+                         <h3 class="article-item__title article-medical__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                         <a href="#" class="article-item__link article-medical__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                       </div>
+                       <!-- end content -->
+                     </div>
+                     <!-- end item -->
+                     <!-- item -->
+                     <div class="swiper-slide article-item article-medical">
+                       <!-- img  -->
+                       <div class="article-item__img article-medical__img">
+                         <div class="">
+                           <div class="thumb-img">
+                               <a href="#" class="thumb-item thumb-5x3">
+                                 <img class="" src="./images/2.jpg" alt="">
+                               </a>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end img  -->
+                       <!-- content -->
+                       <div class="article-item__content article-medical__content">
+                         <h3 class="article-item__title article-medical__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                         <a href="#" class="article-item__link article-medical__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                       </div>
+                       <!-- end content -->
+                     </div>
+                     <!-- end item -->
+                     <!-- item -->
+                     <div class="swiper-slide article-item article-medical">
+                       <!-- img  -->
+                       <div class="article-item__img article-medical__img">
+                         <div class="">
+                           <div class="thumb-img">
+                               <a href="#" class="thumb-item thumb-5x3">
+                                 <img class="" src="./images/2.jpg" alt="">
+                               </a>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end img  -->
+                       <!-- content -->
+                       <div class="article-item__content article-medical__content">
+                         <h3 class="article-item__title article-medical__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                         <a href="#" class="article-item__link article-medical__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                       </div>
+                       <!-- end content -->
+                     </div>
+                     <!-- end item -->
+                     <!-- item -->
+                     <div class="swiper-slide article-item article-medical">
+                       <!-- img  -->
+                       <div class="article-item__img article-medical__img">
+                         <div class="">
+                           <div class="thumb-img">
+                               <a href="#" class="thumb-item thumb-5x3">
+                                 <img class="" src="./images/2.jpg" alt="">
+                               </a>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end img  -->
+                       <!-- content -->
+                       <div class="article-item__content article-medical__content">
+                         <h3 class="article-item__title article-medical__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                         <a href="#" class="article-item__link article-medical__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                       </div>
+                       <!-- end content -->
+                     </div>
+                     <!-- end item -->
+                     
+                   </div>
+                 </div>
+               </div>
+               <!-- end container -->
+               <!-- footer karma -->
+               <div class="footer-karma">
+                 <!-- pagination -->
+               <div class="swiper-pagination swiper-pagination3"></div>
+               <!-- end pagination -->
+               <button class="btn btn-read-more round-99 btn-secondary mx-auto">
+                 <a href="#" class="btn-link">
+                   Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                 </a>
+               </button>
+               <!-- next prev -->
+               <div class="swiper-button-next swiper-button-next3"></div>
+               <div class="swiper-button-prev swiper-button-prev3"></div>
+               <!-- end next prev -->
+               </div>
+               <!-- end footer karma -->
+             </div>
+             <!-- end content -->
+           </div>
+           <!-- end y học pc -->
+           <!-- y học mobile -->
+           <div class="d-xl-none d-block">
+            <div class="section__content section-people-karma-mb">
+              <!-- large -->
+              <div class="karma-large bg-white">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-medical__content">
-                      <h3 class="article-item__title article-medical__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-medical__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
                   </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-medical">
-                    <!-- img  -->
-                    <div class="article-item__img article-medical__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-medical__content">
-                      <h3 class="article-item__title article-medical__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-medical__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-medical">
-                    <!-- img  -->
-                    <div class="article-item__img article-medical__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-medical__content">
-                      <h3 class="article-item__title article-medical__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-medical__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-medical">
-                    <!-- img  -->
-                    <div class="article-item__img article-medical__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-medical__content">
-                      <h3 class="article-item__title article-medical__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-medical__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  
                 </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fs-20 lh-26 fw-700"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
               </div>
+              <!-- end large -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto mt-16">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
             </div>
-            <!-- end container -->
-            <!-- footer karma -->
-            <div class="footer-karma">
-              <!-- pagination -->
-            <div class="swiper-pagination swiper-pagination3"></div>
-            <!-- end pagination -->
-            <button class="btn btn-read-more round-99 btn-secondary mx-auto">
-              <a href="#" class="btn-link">
-                Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
-              </a>
-            </button>
-            <!-- next prev -->
-            <div class="swiper-button-next swiper-button-next3"></div>
-            <div class="swiper-button-prev swiper-button-prev3"></div>
-            <!-- end next prev -->
-            </div>
-            <!-- end footer karma -->
           </div>
-          <!-- end content -->
+           <!-- end y học mobile -->
+
         </div>
       </section>
       <!-- end section-block y học-->
@@ -732,258 +1203,374 @@
           <h2 class="section__title text-center"><a href="#" class="text-red-b12 fw-700 fs-48 lh-62">Điêu khắc</a></h2>
           <!-- end title -->
 
-          <!-- content -->
-          <div class="section__content section-people-karma p-64">
-            <!-- container -->
-            <div class="article-karma-container">
-              <div class="swiper mySwiperSculpture">
-                <div class="swiper-wrapper">
-                  <!-- item -->
-                  <div class="swiper-slide article-karma-item">
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+          <!-- võ thuật pc -->
+          <div class="d-xl-block d-none">
+            <!-- content -->
+            <div class="section__content section-people-karma p-64">
+              <!-- container -->
+              <div class="article-karma-container">
+                <div class="swiper mySwiperSculpture">
+                  <div class="swiper-wrapper">
+                    <!-- item -->
+                    <div class="swiper-slide article-karma-item">
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-40 lh-56 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <p class="article-karma__desc font-secondary lh-26 text-gray-6b mb-16">
+                            Ở triển lãm Nghệ thuật đương đại “NIỆM” của họa sĩ Ngô Xuân Bính, Lê Văn Thìn, Đặng Tin Tưởng và nghệ nhân Đào Trọng Cường tại Bảo tàng Hà Nội vào ngày 30 tháng 5 tới đây, nghệ thuật sáng tạo đã được đẩy lên cao trào, nét chung ở các tác phẩm là sự hướng thiện thể hiện trong những nét vẽ miên man.
+                          </p>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-40 lh-56 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <p class="article-karma__desc font-secondary lh-26 text-gray-6b mb-16">
-                          Ở triển lãm Nghệ thuật đương đại “NIỆM” của họa sĩ Ngô Xuân Bính, Lê Văn Thìn, Đặng Tin Tưởng và nghệ nhân Đào Trọng Cường tại Bảo tàng Hà Nội vào ngày 30 tháng 5 tới đây, nghệ thuật sáng tạo đã được đẩy lên cao trào, nét chung ở các tác phẩm là sự hướng thiện thể hiện trong những nét vẽ miên man.
-                        </p>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
                           </div>
                         </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
                       </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
+                      <!-- end article karma -->
                     </div>
-                    <!-- end article karma -->
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-karma-item">
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-40 lh-56 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <p class="article-karma__desc font-secondary lh-26 text-gray-6b mb-16">
+                            Ở triển lãm Nghệ thuật đương đại “NIỆM” của họa sĩ Ngô Xuân Bính, Lê Văn Thìn, Đặng Tin Tưởng và nghệ nhân Đào Trọng Cường tại Bảo tàng Hà Nội vào ngày 30 tháng 5 tới đây, nghệ thuật sáng tạo đã được đẩy lên cao trào, nét chung ở các tác phẩm là sự hướng thiện thể hiện trong những nét vẽ miên man.
+                          </p>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                      <!-- article karma -->
+                      <div class="article-karma">
+                        <!-- img  -->
+                        <div class="article-karma__img">
+                          <div class="">
+                            <div class="thumb-img">
+                                <a href="#" class="thumb-item thumb-5x3">
+                                  <img class="" src="./images/2.jpg" alt="">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end img  -->
+                        <!-- content -->
+                        <div class="article-karma__content">
+                          <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                          <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end article karma -->
+                    </div>
+                    <!-- end item -->
                   </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-karma-item">
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-40 lh-56 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <p class="article-karma__desc font-secondary lh-26 text-gray-6b mb-16">
-                          Ở triển lãm Nghệ thuật đương đại “NIỆM” của họa sĩ Ngô Xuân Bính, Lê Văn Thìn, Đặng Tin Tưởng và nghệ nhân Đào Trọng Cường tại Bảo tàng Hà Nội vào ngày 30 tháng 5 tới đây, nghệ thuật sáng tạo đã được đẩy lên cao trào, nét chung ở các tác phẩm là sự hướng thiện thể hiện trong những nét vẽ miên man.
-                        </p>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                    <!-- article karma -->
-                    <div class="article-karma">
-                      <!-- img  -->
-                      <div class="article-karma__img">
-                        <div class="">
-                          <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3">
-                                <img class="" src="./images/2.jpg" alt="">
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end img  -->
-                      <!-- content -->
-                      <div class="article-karma__content">
-                        <h3 class="article-karma__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                        <a href="#" class="article-karma__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                      </div>
-                      <!-- end content -->
-                    </div>
-                    <!-- end article karma -->
-                  </div>
-                  <!-- end item -->
                 </div>
               </div>
+              <!-- end container -->
+              <!-- footer karma -->
+              <div class="footer-karma">
+                <!-- pagination -->
+              <div class="swiper-pagination swiper-pagination4"></div>
+              <!-- end pagination -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+              <!-- next prev -->
+              <div class="swiper-button-next swiper-button-next4"></div>
+              <div class="swiper-button-prev swiper-button-prev4"></div>
+              <!-- end next prev -->
+              </div>
+              <!-- end footer karma -->
             </div>
-            <!-- end container -->
-            <!-- footer karma -->
-            <div class="footer-karma">
-              <!-- pagination -->
-            <div class="swiper-pagination swiper-pagination4"></div>
-            <!-- end pagination -->
-            <button class="btn btn-read-more round-99 btn-secondary mx-auto">
-              <a href="#" class="btn-link">
-                Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
-              </a>
-            </button>
-            <!-- next prev -->
-            <div class="swiper-button-next swiper-button-next4"></div>
-            <div class="swiper-button-prev swiper-button-prev4"></div>
-            <!-- end next prev -->
-            </div>
-            <!-- end footer karma -->
+            <!-- end content -->
           </div>
-          <!-- end content -->
+          <!-- end võ thuật pc -->
+
+          <!-- end võ thuật mobile-->
+          <div class="d-xl-none d-block">
+            <div class="section__content section-people-karma-mb">
+              <!-- large -->
+              <div class="karma-large bg-white">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fs-20 lh-26 fw-700"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end large -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto mt-16">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+            </div>
+          </div>
+          <!-- end võ thuật mobile-->
         </div>
       </section>
       <!-- end section-block điêu khắc-->
@@ -995,140 +1582,257 @@
           <h2 class="section__title text-center"><a href="#" class="text-red-b12 fw-700 fs-48 lh-62">Hội họa</a></h2>
           <!-- end title -->
 
-          <!-- content -->
-          <div class="section__content section-art p-64">
-            <!-- container -->
-            <div class="article-art-container">
-              <div class="swiper mySwiperArt">
-                <div class="swiper-wrapper">
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-art">
-                    <!-- img  -->
-                    <div class="article-item__img article-art__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+          <!-- võ thuật pc -->
+          <div class="d-xl-block d-none">
+            <!-- content -->
+            <div class="section__content section-art p-64">
+              <!-- container -->
+              <div class="article-art-container">
+                <div class="swiper mySwiperArt">
+                  <div class="swiper-wrapper">
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-art">
+                      <!-- img  -->
+                      <div class="article-item__img article-art__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-art__content">
+                        <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-art__content">
-                      <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-art">
-                    <!-- img  -->
-                    <div class="article-item__img article-art__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-art">
+                      <!-- img  -->
+                      <div class="article-item__img article-art__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-art__content">
+                        <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-art__content">
-                      <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-art">
-                    <!-- img  -->
-                    <div class="article-item__img article-art__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-art">
+                      <!-- img  -->
+                      <div class="article-item__img article-art__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-art__content">
+                        <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-art__content">
-                      <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-art">
-                    <!-- img  -->
-                    <div class="article-item__img article-art__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-art">
+                      <!-- img  -->
+                      <div class="article-item__img article-art__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-art__content">
+                        <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-art__content">
-                      <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-art">
-                    <!-- img  -->
-                    <div class="article-item__img article-art__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-art">
+                      <!-- img  -->
+                      <div class="article-item__img article-art__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-art__content">
+                        <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-art__content">
-                      <h3 class="article-item__title article-art__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-art__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
+                    <!-- end item -->
+                    
                   </div>
-                  <!-- end item -->
-                  
                 </div>
               </div>
+              <!-- end container -->
+              <!-- footer karma -->
+              <div class="footer-karma">
+                <!-- pagination -->
+              <div class="swiper-pagination swiper-pagination5"></div>
+              <!-- end pagination -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+              <!-- next prev -->
+              <div class="swiper-button-next swiper-button-next5"></div>
+              <div class="swiper-button-prev swiper-button-prev5"></div>
+              <!-- end next prev -->
+              </div>
+              <!-- end footer karma -->
             </div>
-            <!-- end container -->
-            <!-- footer karma -->
-            <div class="footer-karma">
-              <!-- pagination -->
-            <div class="swiper-pagination swiper-pagination5"></div>
-            <!-- end pagination -->
-            <button class="btn btn-read-more round-99 btn-secondary mx-auto">
-              <a href="#" class="btn-link">
-                Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
-              </a>
-            </button>
-            <!-- next prev -->
-            <div class="swiper-button-next swiper-button-next5"></div>
-            <div class="swiper-button-prev swiper-button-prev5"></div>
-            <!-- end next prev -->
-            </div>
-            <!-- end footer karma -->
+            <!-- end content -->
           </div>
-          <!-- end content -->
+          <!-- end võ thuật pc -->
+
+          <!-- end võ thuật mobile-->
+          <div class="d-xl-none d-block">
+            <div class="section__content section-people-karma-mb">
+              <!-- large -->
+              <div class="karma-large bg-white">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fs-20 lh-26 fw-700"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end large -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto mt-16">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+            </div>
+          </div>
+          <!-- end võ thuật mobile-->
+
         </div>
       </section>
       <!-- end section-block hội họa-->
@@ -1140,119 +1844,236 @@
           <h2 class="section__title text-center"><a href="#" class="text-red-b12 fw-700 fs-48 lh-62">Thơ ca</a></h2>
           <!-- end title -->
 
-          <!-- content -->
-          <div class="section__content section-poem p-64">
-            <!-- container -->
-            <div class="article-poem-container">
-              <div class="swiper mySwiperPoem">
-                <div class="swiper-wrapper">
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-poem">
-                    <!-- img  -->
-                    <div class="article-item__img article-poem__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+          <!-- võ thuật pc -->
+          <div class="d-xl-block d-none">
+            <!-- content -->
+            <div class="section__content section-poem p-64">
+              <!-- container -->
+              <div class="article-poem-container">
+                <div class="swiper mySwiperPoem">
+                  <div class="swiper-wrapper">
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-poem">
+                      <!-- img  -->
+                      <div class="article-item__img article-poem__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-poem__content">
+                        <h3 class="article-item__title article-poem__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-poem__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-poem__content">
-                      <h3 class="article-item__title article-poem__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-poem__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-poem">
-                    <!-- img  -->
-                    <div class="article-item__img article-poem__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-poem">
+                      <!-- img  -->
+                      <div class="article-item__img article-poem__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-poem__content">
+                        <h3 class="article-item__title article-poem__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-poem__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-poem__content">
-                      <h3 class="article-item__title article-poem__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-poem__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-poem">
-                    <!-- img  -->
-                    <div class="article-item__img article-poem__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-poem">
+                      <!-- img  -->
+                      <div class="article-item__img article-poem__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-poem__content">
+                        <h3 class="article-item__title article-poem__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-poem__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-poem__content">
-                      <h3 class="article-item__title article-poem__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-poem__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
-                  </div>
-                  <!-- end item -->
-                  <!-- item -->
-                  <div class="swiper-slide article-item article-poem">
-                    <!-- img  -->
-                    <div class="article-item__img article-poem__img">
-                      <div class="">
-                        <div class="thumb-img">
-                            <a href="#" class="thumb-item thumb-5x3">
-                              <img class="" src="./images/2.jpg" alt="">
-                            </a>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="swiper-slide article-item article-poem">
+                      <!-- img  -->
+                      <div class="article-item__img article-poem__img">
+                        <div class="">
+                          <div class="thumb-img">
+                              <a href="#" class="thumb-item thumb-5x3">
+                                <img class="" src="./images/2.jpg" alt="">
+                              </a>
+                          </div>
                         </div>
                       </div>
+                      <!-- end img  -->
+                      <!-- content -->
+                      <div class="article-item__content article-poem__content">
+                        <h3 class="article-item__title article-poem__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                        <a href="#" class="article-item__link article-poem__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
+                      </div>
+                      <!-- end content -->
                     </div>
-                    <!-- end img  -->
-                    <!-- content -->
-                    <div class="article-item__content article-poem__content">
-                      <h3 class="article-item__title article-poem__title fs-20 lh-28 fw-700 mb-16"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
-                      <a href="#" class="article-item__link article-poem__link text-orange-9d5 font-secondary lh-26">Xem thêm</a>
-                    </div>
-                    <!-- end content -->
+                    <!-- end item -->
+                    
                   </div>
-                  <!-- end item -->
-                  
                 </div>
               </div>
+              <!-- end container -->
+              <!-- footer karma -->
+              <div class="footer-karma">
+                <!-- pagination -->
+              <div class="swiper-pagination swiper-pagination6"></div>
+              <!-- end pagination -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+              <!-- next prev -->
+              <div class="swiper-button-next swiper-button-next6"></div>
+              <div class="swiper-button-prev swiper-button-prev6"></div>
+              <!-- end next prev -->
+              </div>
+              <!-- end footer karma -->
             </div>
-            <!-- end container -->
-            <!-- footer karma -->
-            <div class="footer-karma">
-              <!-- pagination -->
-            <div class="swiper-pagination swiper-pagination6"></div>
-            <!-- end pagination -->
-            <button class="btn btn-read-more round-99 btn-secondary mx-auto">
-              <a href="#" class="btn-link">
-                Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
-              </a>
-            </button>
-            <!-- next prev -->
-            <div class="swiper-button-next swiper-button-next6"></div>
-            <div class="swiper-button-prev swiper-button-prev6"></div>
-            <!-- end next prev -->
-            </div>
-            <!-- end footer karma -->
+            <!-- end content -->
           </div>
-          <!-- end content -->
+          <!-- end võ thuật pc -->
+
+          <!-- end võ thuật mobile-->
+          <div class="d-xl-none d-block">
+            <div class="section__content section-people-karma-mb">
+              <!-- large -->
+              <div class="karma-large bg-white">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fs-20 lh-26 fw-700"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end large -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <!-- small -->
+              <div class="karma-small">
+                <!-- img  -->
+                <div class="article-karma__img">
+                  <div class="">
+                    <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3">
+                          <img class="" src="./images/2.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end img  -->
+                <!-- content -->
+                <div class="article-karma__content">
+                  <h3 class="article-karma__title fw-600 lh-26"><a href="#">Bốn họa sỹ, nghệ nhân tài danh với triển lãm Nghệ thuật đương đại “NIỆM”</a></h3>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end small -->
+              <button class="btn btn-read-more round-99 btn-secondary mx-auto mt-16">
+                <a href="#" class="btn-link">
+                  Xem thêm <img src="./images/arrow-brown.png" alt="" class="btn-img">
+                </a>
+              </button>
+            </div>
+          </div>
+          <!-- end võ thuật mobile-->
+
         </div>
       </section>
       <!-- end section-block thơ ca-->
@@ -1260,6 +2081,9 @@
       <!-- thành tựu -->
       <section class="achievement-block">
         <div class="achievement-container w-1920">
+          <div class="d-xl-none d-md-block mt-20">
+            <h3 class="achievement__title text-white fs-48 lh-62 text-center">Thành tựu</h3>
+          </div>
           <!-- img -->
           <div class="achievement__img">
             <div class="thumb-img">
@@ -1271,7 +2095,7 @@
           <!-- end img -->
           <!-- content -->
           <div class="achievement__content">
-            <h3 class="achievement__title text-white fs-48 lh-62">Thành tựu</h3>
+            <h3 class="achievement__title text-white fs-48 lh-62 d-xl-block d-md-none">Thành tựu</h3>
             <div class="achievement__desc text-white lh-26 font-secondary">
               <p>Đêm nhạc Ân khúc - Giao hòa được tổ chức tối 24/1 tại Nhà hát Lớn, Hà Nội nhằm vinh danh những ca khúc nổi tiếng được phổ từ thơ của giáo sư Ngô Xuân Bính. Chương trình bao gồm các sáng tác của 10 nhạc sĩ: Nguyễn Cường, Phú Quang, Huy Thông, Xuân Phương, Đức Trịnh, Phú Cử, Trọng Tuấn, Tuấn Phương, Kim Quang, Quang Vinh.</p>
               <p>Là nhà khoa học có nhiều công trình nghiên cứu đáng giá, đứng đầu môn phái võ thuật dân tộc mang tên Nhất Nam, giáo sư Ngô Xuân Bính còn có một niềm đam mê lớn với thi ca. Ông từng cho xuất bản 7 tập thơ với hàng nghìn tác phẩm. Trong đó, không ít bài thơ đã truyền cảm hứng cho các nhạc sĩ nổi tiếng phổ thành nhạc như Chợ quê, Hà Nội trong tôi, Thả thuyền bến Mơ, Huế một lần gặp, Tháp Chàm, Nếp nương hay Nỗi nhớ quê.</p>

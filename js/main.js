@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
  
  const resolution = document.querySelector('body').clientWidth;
- var mySwiper;
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -22,30 +21,40 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     // slider người & nghiệp
     sliderKarma: function(){
-      if(resolution > 768){
-        mySwiper = new Swiper(".mySwiperKarma", {
-          slidesPerView: 1,
-          slidesPerGroup: 1,
-          spaceBetween: 30,
-          navigation: {
-            nextEl: ".swiper-button-next1",
-            prevEl: ".swiper-button-prev1",
+      var swiper = new Swiper(".mySwiperKarma", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next1",
+          prevEl: ".swiper-button-prev1",
+        },
+        hideOnClick:true,
+        pagination: {
+          el: ".swiper-pagination1",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
           },
-          hideOnClick:true,
-          pagination: {
-            el: ".swiper-pagination1",
-            clickable: true,
+          768: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
           },
-        });
-      }else {
-        document.querySelector('.swiper-wrapper').removeAttribute('class');
-      }
-      
+          1024: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+        },
+        
+      });
     },
     // slider võ thuật
     sliderKungfu: function(){
       var swiper = new Swiper(".mySwiperKungfu", {
-        slidesPerView: 4,
+        slidesPerView: 1,
         slidesPerGroup: 1,
         spaceBetween: 30,
         navigation: {
@@ -57,12 +66,26 @@ document.addEventListener("DOMContentLoaded", function () {
           el: ".swiper-pagination2",
           clickable: true,
         },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          1024: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+          },
+        },
       });
     },
     // slider y học
     sliderMedical: function(){
       var swiper = new Swiper(".mySwiperMedical", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         slidesPerGroup: 1,
         spaceBetween: 30,
         navigation: {
@@ -73,6 +96,20 @@ document.addEventListener("DOMContentLoaded", function () {
         pagination: {
           el: ".swiper-pagination3",
           clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+          },
         },
       });
     },
@@ -96,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // slider hội họa
     sliderArt: function(){
       var swiper = new Swiper(".mySwiperArt", {
-        slidesPerView: 4,
+        slidesPerView: 1,
         slidesPerGroup: 1,
         spaceBetween: 30,
         navigation: {
@@ -108,12 +145,26 @@ document.addEventListener("DOMContentLoaded", function () {
           el: ".swiper-pagination5",
           clickable: true,
         },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          1024: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+          },
+        },
       });
     },
     // slider thơ ca
     sliderPoem: function(){
       var swiper = new Swiper(".mySwiperPoem", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         slidesPerGroup: 1,
         spaceBetween: 30,
         navigation: {
@@ -125,6 +176,33 @@ document.addEventListener("DOMContentLoaded", function () {
           el: ".swiper-pagination6",
           clickable: true,
         },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+          },
+        },
+      });
+    },
+    // slider media mobile
+    sliderMediaMb: function(){
+      var swiper = new Swiper(".mySwiperMediaMb", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next7",
+          prevEl: ".swiper-button-prev7",
+        },
+        hideOnClick:true,
       });
     },
     // khoi tao function start
@@ -145,6 +223,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.sliderArt();
       // slider thơ ca
       this.sliderPoem();
+      // slider media mobile
+      this.sliderMediaMb();
     },
   };
 
