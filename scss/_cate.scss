@@ -1,0 +1,37 @@
+.section__title--cate {
+    position: relative;
+    margin-top: 1.875rem;
+}
+.section__title--cate::before {
+    position: absolute;
+    content: url('../images/wave.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -6.75rem;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    opacity: 0.6;
+}
+.section-cate-content {
+    background-color: inherit;
+}
+.cate-primary {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.875rem;
+}
+.cate-secondary {
+    margin-top: 1.875rem;
+}
+.footer-cate {
+    margin-bottom: 3rem;
+}
+.h-48px {
+    height: 3rem;
+}

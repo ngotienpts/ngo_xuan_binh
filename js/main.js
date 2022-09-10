@@ -1,12 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
  
  const resolution = document.querySelector('body').clientWidth;
+
+ const showSub = document.querySelector('.js_submenu');
+ const subMenu = document.querySelector('.sub-menu-wrapper');
+ const closeSub = document.querySelector('.js_close');
+
+ const countItem = document.querySelector('.js_count');
   const app = {
     // su ly cac su kien
     handleEvent: function () {
       const _this = this;
 
-      
+      if(showSub){
+        showSub.onclick  = function() {
+          this.classList.toggle('open');
+          if(subMenu){
+            subMenu.classList.toggle('open')
+          }
+        }
+      }
+
+      if(closeSub){
+        closeSub.onclick = function(){
+          this.closest('.open').classList.remove('open');
+          if(showSub){
+            showSub.classList.remove('open')
+          }
+        }
+      }
 
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {});
@@ -205,6 +227,98 @@ document.addEventListener("DOMContentLoaded", function () {
         hideOnClick:true,
       });
     },
+    // slider cate
+    sliderCate: function(){
+      if(countItem){
+        var count = Math.floor(countItem.children.length /3);
+        var swiper = new Swiper(".mySwiperCate", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-button-next8",
+            prevEl: ".swiper-button-prev8",
+          },
+          hideOnClick:true,
+          pagination: {
+            el: ".swiper-pagination8",
+            clickable: true,
+          },
+          grid: {
+            rows: count,
+            fill: 'rows',
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              grid: {
+                rows: count,
+                fill: 'rows',
+              },
+            },
+            768: {
+              slidesPerView: 2,
+              grid: {
+                rows: count,
+                fill: 'rows',
+              },
+            },
+            1024: {
+              slidesPerView: 3,
+              grid: {
+                rows: count,
+                fill: 'rows',
+              },
+            },
+          },
+        });
+      }
+    },
+    // slider cate media
+    sliderMediaPage: function(){
+      if(countItem){
+        var count = Math.floor(countItem.children.length /1);
+        var swiper = new Swiper(".mySwiperMedia", {
+          slidesPerView: 1,
+          spaceBetween: 60,
+          navigation: {
+            nextEl: ".swiper-button-next9",
+            prevEl: ".swiper-button-prev9",
+          },
+          hideOnClick:true,
+          pagination: {
+            el: ".swiper-pagination9",
+            clickable: true,
+          },
+          grid: {
+            rows: count,
+            fill: 'rows',
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              grid: {
+                rows: count,
+                fill: 'rows',
+              },
+            },
+            768: {
+              slidesPerView: 1,
+              grid: {
+                rows: count,
+                fill: 'rows',
+              },
+            },
+            1024: {
+              slidesPerView: 1,
+              grid: {
+                rows: count,
+                fill: 'rows',
+              },
+            },
+          },
+        });
+      }
+    },
     // khoi tao function start
     start: function () {
       // su ly cac su kien
@@ -225,6 +339,10 @@ document.addEventListener("DOMContentLoaded", function () {
       this.sliderPoem();
       // slider media mobile
       this.sliderMediaMb();
+      // slider cate
+      this.sliderCate();
+       // slider cate media
+      this.sliderMediaPage();
     },
   };
 
