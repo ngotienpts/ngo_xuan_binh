@@ -83,6 +83,11 @@
   .media-page-sidebar {
     padding-top: 0;
   }
+  /*============================================================================ detail*/
+  .detail-container {
+    grid-gap: 20px;
+    padding: 0 20px;
+  }
 }
 
 // tablet and mobile <= 1023px
@@ -208,6 +213,11 @@
 .media-page-sidebar {
   padding-top: 0;
 }
+/*============================================================================ media*/
+.detail-container {
+  display: block;
+  padding: 0 20px;
+}
 
 }
 
@@ -225,6 +235,23 @@
   /*============================================================================ default*/
   .header-navbar-mb__logo {
     font-size: 2.25rem;
+  }
+  /*============================================================================ video*/
+  .video-page-secondary {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  /*============================================================================ detail*/
+  .read-a-lot-block {
+    padding: 2rem 0;
+  }
+  .list-read {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25rem;
+  }
+  .item-read {
+    border-bottom: none;
   }
 }
 
@@ -356,9 +383,50 @@
 .section__content-cate {
   padding-top: 0;
 }
+.section__title--cate {
+  font-size: 2.25rem;
+}
 /*====================================================================================================== media*/
 .video-thumb-page {
   background-color: #000;
+}
+.play-video {
+  margin-bottom: 1rem;  
+} 
+/*====================================================================================================== detail*/
+.detail-container {
+  display: block;
+  padding: 0 15px;
+}
+.detail-content {
+  padding-left: 0;
+}
+blockquote.expNoEdit {
+  padding: 16px;
+}
+.detail-right {
+  margin-top: 3.75rem;
+}
+.read-a-lot__title {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 400;
+}
+.item-read {
+  border-bottom: none;
+  padding: 0.625rem 0;
+}
+.item-read__cate {
+  display: none;
+}
+.item-read__content {
+  background-color: #fff;
+  padding: 0.625rem;
+}
+.item-read__title {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  margin-bottom: 0;
 }
 }
 
